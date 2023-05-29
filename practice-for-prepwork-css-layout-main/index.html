@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+    </head>
+    <body id="body">
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+            <legend>Add user</legend>
+
+            <div class="inputText">
+                <label class="label" for="firstName">First name</label><br>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div class="inputText">
+                <label class="label" for="lastName">Last name</label><br>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div class="inputText">
+                <label class="label" for="email">Email</label><br>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+            <div class="status-and-date">
+                <label class="label" for="role">Status</label><br>
+                <select id="role" name="user_role_name">
+                <option class="option" value="student">Student</option>
+                <option class="option" value="instructor">Instructor</option>
+                <option class="option" value="guest">Guest</option>
+                </select><br>
+                <label class="label" for="date">Date</label><br>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <div id="radioBorder">
+                <p id="radioDesc">Choose your favorite Web language:</p>
+                <div id="radio">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label class="labelRadio" for="html">HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label class="labelRadio" for="css">CSS</label>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label class="labelRadio" for="javascript">JavaScript</label>
+                </div>
+            </div>
+
+            <div>
+                <label class="label labelCom" for="comments">Comments</label><br>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+
+
+            <div id="checkboxes">
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label class="labelCheck" for="signup">Sign up for news letter</label><br>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label class="labelCheck" for="terms"> Agree to terms and conditions</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
